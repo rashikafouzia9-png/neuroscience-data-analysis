@@ -1,59 +1,94 @@
-Overview
-This repository contains Python code for analyzing neural data. I'm building computational skills for neuroscience research as I prepare to apply to graduate programs in computational neuroscience.
-About This Project
-I'm a 2nd-year BSc Neuroscience with Psychology student at University of Sussex. This portfolio demonstrates my developing skills in:
+# Neural Spike Train Analysis
 
-Python programming for data analysis
-Neuroscience data visualization
-Computational approaches to understanding neural activity
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Status](https://img.shields.io/badge/Status-Complete-success.svg)
+![Field](https://img.shields.io/badge/Field-Computational%20Neuroscience-purple.svg)
 
-Current Projects
-Project 1: Neural Spike Train Analysis ✅
-Status: Complete (January 2026)
-Analysis of simulated neural spike trains, including:
+## 🧠 Overview
 
-Spike detection and visualization
-Firing rate calculations
-Raster plots
-Statistical analysis of neural activity
+Computational analysis of simulated neural spike trains using Poisson process modeling to characterize neural firing patterns. This project demonstrates fundamental computational neuroscience techniques for understanding neural activity at the single-cell level.
 
-Key Techniques:
+**Key Achievement:** Developed Python pipeline for spike detection, firing rate estimation, and statistical characterization of neural activity patterns - essential skills for computational neuroscience research.
 
-Poisson process simulation
-Time-binned firing rate analysis
-Data visualization with matplotlib
+---
 
-Future Projects (Planned)
+## 📊 Results
 
-Project 2: Real neural data analysis using public datasets (Feb-Mar 2026)
-Project 3: Computational neuron models (Summer 2026)
-Project 4: Machine learning applications to neuroscience (Autumn 2026)
+### Spike Train Visualization
+![Spike Train](figures/spike_train_example.png)
+*Poisson-generated spike train showing stochastic neural firing over 1000ms duration*
 
-Technologies
+### Firing Rate Analysis
+![Firing Rate](figures/firing_rate_distribution.png)
+*Time-binned firing rate analysis revealing temporal dynamics of neural activity*
 
-Python 3.x
-NumPy - Numerical computations
-Matplotlib - Data visualization
-SciPy - Statistical analysis
+### Key Findings
+- Successfully simulated neural spike trains with physiologically realistic firing rates (10 Hz)
+- Implemented time-binned firing rate estimation with 50ms windows
+- Statistical characterization confirmed Poisson process properties (CV ≈ 1)
+- Demonstrated quantitative analysis techniques applicable to real electrophysiology data
 
-Repository Structure
-neuroscience-data-analysis/
-├── scripts/           # Python analysis scripts
-├── figures/           # Output visualizations
-├── data/              # Small datasets (large files linked externally)
-├── README.md          # This file
-└── requirements.txt   # Python dependencies
-How to Run
-bash# Install dependencies
-pip install -r requirements.txt
+---
 
-# Run spike train analysis
-python scripts/spike_train_analysis.py
-Goals
+## 🔬 Scientific Context
 
-Develop Python proficiency for neuroscience data analysis
-Build a portfolio for graduate applications (ETH Zurich MSc Neural Systems & Computation)
-Bridge experimental and computational neuroscience
+**The Neuroscience Question:**  
+How can we quantitatively characterize the temporal patterns of neural firing? Understanding spike train statistics is fundamental to decoding information in neural circuits.
 
-Contact
-Rashika | University of Sussex | Neuroscience with Psychology BSc
+**Why Computational Methods?**  
+Traditional visual inspection of spike trains is subjective. Computational analysis enables:
+- Objective quantification of firing patterns
+- Statistical comparison across neurons and conditions  
+- Detection of subtle temporal dynamics invisible to human observation
+- Foundation for more advanced analyses (information theory, neural decoding)
+
+**Applications:**
+- Brain-computer interfaces (decoding motor intent from spike trains)
+- Understanding sensory coding mechanisms
+- Characterizing disease-related changes in neural firing
+- Drug discovery (analyzing effects on neural activity)
+
+---
+
+## 🛠️ Technical Implementation
+
+### Technologies
+- **Python 3.x** - Core programming language
+- **NumPy** - Efficient numerical computations for spike generation and analysis
+- **Matplotlib** - Professional scientific visualizations
+- **SciPy** (planned) - Advanced statistical analyses
+
+### Methodology
+
+**1. Spike Train Generation**
+- Implemented Poisson process model (standard in computational neuroscience)
+- Configurable firing rate parameter (10 Hz default)
+- Reproducible random seed for validation
+
+**2. Spike Detection & Timing**
+- Precise spike time extraction from continuous simulation
+- Sub-millisecond temporal resolution
+
+**3. Firing Rate Analysis**
+- Time-binned firing rate estimation (sliding window approach)
+- Temporal smoothing options for cleaner visualization
+
+**4. Statistical Characterization**
+- Inter-spike interval (ISI) distribution analysis
+- Coefficient of variation calculation
+- Verification of Poisson process properties
+
+### Code Quality
+- Comprehensive docstrings explaining parameters and returns
+- Clear variable naming following PEP 8 standards
+- Modular function design for reusability
+- Detailed inline comments explaining neuroscience concepts
+
+---
+
+## 📈 Sample Output 
+## 🎯 Future Directions
+- Extend analysis to multi-neuron recordings
+- Implement spike-triggered averaging for stimulus encoding
+- Add information-theoretic measures (mutual information)
+- Apply techniques to real electrophysiology datasets
