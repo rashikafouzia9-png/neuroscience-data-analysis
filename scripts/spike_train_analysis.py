@@ -327,3 +327,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+import matplotlib.pyplot as plt
+
+# 1. Spike train visualization
+plt.figure(figsize=(12, 4))
+# [your spike train plotting code]
+plt.savefig('figures/spike_train_example.png', dpi=300, bbox_inches='tight')
+plt.close()
+
+# 2. Firing rate histogram
+plt.figure(figsize=(8, 6))
+# [your firing rate histogram code]
+plt.savefig('figures/firing_rate_distribution.png', dpi=300, bbox_inches='tight')
+plt.close()
+
+# 3. Raster plot (if you have multiple trials)
+plt.figure(figsize=(10, 6))
+# [your raster plot code]
+plt.savefig('figures/raster_plot.png', dpi=300, bbox_inches='tight')
+plt.close()
