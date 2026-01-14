@@ -6,7 +6,7 @@
 
 ## 🧠 Overview
 
-Computational analysis of simulated neural spike trains using Poisson process modeling to characterize neural firing patterns. This project demonstrates fundamental computational neuroscience techniques for understanding neural activity at the single-cell level.
+Computational analysis of simulated neural spike trains using Poisson process modeling to characterize neural firing patterns. This project demonstrates fundamental computational neuroscience techniques for understanding neural activity at the single cell level.
 
 **Key Achievement:** Developed Python pipeline for spike detection, firing rate estimation, and statistical characterization of neural activity patterns - essential skills for computational neuroscience research.
 
